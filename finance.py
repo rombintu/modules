@@ -1,7 +1,8 @@
+from decimal import Decimal
 from pycbrf.toolbox import ExchangeRates
 from datetime import datetime
 
-def convert_rub(summa=0):
+def convert_rub(summa=0) -> Decimal:
     today = datetime.today().strftime("%Y-%m-%d")
     rates = ExchangeRates(today)
 
